@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Navbar from './components/1. Navbar/Navbar';
+import Intro from './components/2. Intro/Intro';
+import URL from './components/3. URL/URL';
+import Advanced from './components/4. Advanced/Advanced';
+import Boost from './components/5. Boost/Boost';
+import Footer from './components/6. Footer/Footer';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  const toggleIsNav = () => {
+      setIsNavExpanded(!isNavExpanded)
+      document.body.classList.toggle('fixed-pos');
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar 
+        toggleIsNav={toggleIsNav}
+        isNavExpanded={isNavExpanded}
+      />
+      <Intro />
+      <URL />
+      <Advanced />
+      <Boost />
+      <Footer />
     </div>
   );
 }
