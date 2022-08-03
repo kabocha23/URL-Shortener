@@ -1,0 +1,34 @@
+
+.intro-container {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text {
+    width: 50%;
+}
+.intro-text h1 {
+    width: 100%;
+    margin-right: auto;
+}
+.intro-text p {
+    width: 100%;
+    margin-right: auto;
+}
+.intro-text button {
+    width: 10em;
+}
+
+
+
+
+.intro-img {
+    width: 50%;
+}
+.intro-img img {
+    max-height: 100%;
+}

@@ -1,0 +1,9 @@
+
+.url-container {
+    height: auto;
+    width: 100%;
+}
+
+.url-input {
+    background-color: hsl(257, 27%, 26%);
+}
