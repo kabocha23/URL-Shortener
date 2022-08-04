@@ -2,7 +2,7 @@
 .intro-container {
     display: flex;
     flex-flow: row wrap-reverse;
-    width: 100%;
+    width: 90%;
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +10,7 @@
 
 .intro-text {
     width: 50%;
-    min-width: 480.5px;
+    min-width: 425px;
 }
 .intro-text h1 {
     width: 100%;
@@ -29,7 +29,7 @@
 
 .intro-img {
     width: 50%;
-    min-width: 480.5px;
+    min-width: 425px;
 
 }
 .intro-img img {

@@ -1,8 +1,81 @@
 
 
 .footer-container {
-    width: 100%;
-    max-width: 1280px;
+    background-color: hsl(260, 8%, 14%);
+    padding: 2em 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+.footer-header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    z-index: 15;
+}
+.footer-header-brand {
+    width: 50%;
+    margin-right: auto;
+    z-index: 15;
+    filter: brightness(0) invert(1);
+}
+
+
+.footer-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: white;
+}
+.footer-body-sub {
+    list-style-type: none;
+    z-index: 15;
+}
+.footer-body-sub ul {
+    padding: 0;
+}
+.footer-body-sub ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 75%);
+}
+.footer-body-sub ul li:hover {
+    text-decoration: underline;
+}
+.footer-body-sub ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.foot-sub-head {
+    margin-bottom: 25px!important;
+}
+.foot-sub-head a {
+    color: white!important;
+}
+
+
+.footer-contacts {
+    display: flex;
+    width: 20%;
+    margin-left: auto;
+    justify-content: flex-end;
+    z-index: 15;
+}
+.footer-contacts a {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
 }
