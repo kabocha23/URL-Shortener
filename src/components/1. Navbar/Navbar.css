@@ -3,6 +3,9 @@
 .navbar-container {
     height: 6em;
     width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: transparent;
     font-family: 'League Spartan', sans-serif;
 }
@@ -26,6 +29,7 @@
 
 .navbar-brand {
     display: flex;
+    height: 100%;
     width: 5em;
     justify-content: center;
     align-items: center;
@@ -50,7 +54,10 @@
     cursor: pointer;
 }
 .nav-menu-items a:hover {
-    border-color: white;
+    border-color: gray;
+}
+#login-right {
+    margin-left: auto;
 }
 
 
@@ -69,7 +76,7 @@
         height: 6em;
         width: 100vw;
         z-index: 9;
-        transform: translate3d(0, -100vh, 0);
+        transform: translate3d(0, -105vh, 0);
         transition: all 0.2s cubic-bezier(0, .52, 0, 1);
     }
     .nav-menu-coll.expanded {
@@ -83,7 +90,7 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        height: 90vh;
+        height: 50vh;
         width: 90vw;
         color: white;
         background-color: hsl(257, 27%, 26%);
@@ -145,8 +152,6 @@
 
     .navbar-brand {
         margin-right: auto;
-        left: 0;
-        right: 0;
         z-index: 7;
     }
 }

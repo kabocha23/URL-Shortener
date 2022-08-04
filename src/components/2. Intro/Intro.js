@@ -13,7 +13,7 @@ const Intro = () => {
                 <button>Get Started</button>
             </div>
             <div className="intro-img">
-                <img src={introWorking}></img>
+                <img src={introWorking} alt='working'></img>
             </div>
         </div>
     );

@@ -10,6 +10,7 @@
 
 .intro-text {
     width: 50%;
+    min-width: 480.5px;
 }
 .intro-text h1 {
     width: 100%;
@@ -28,6 +29,8 @@
 
 .intro-img {
     width: 50%;
+    min-width: 480.5px;
+
 }
 .intro-img img {
     max-height: 100%;
