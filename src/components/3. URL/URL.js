@@ -9,7 +9,7 @@ const URL = () => {
         <div className="url-container">
             <div className="url-input">
                 <input placeholder='Shorten a link here...'></input>
-                <button>Shorten It!</button>
+                <button><a>Shorten It!</a></button>
             </div>
             <div className="url-history">
 

@@ -7,7 +7,6 @@
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
-    font-family: 'League Spartan', sans-serif;
 }
 
 
@@ -30,7 +29,7 @@
 .navbar-brand {
     display: flex;
     height: 100%;
-    width: 5em;
+    width: 20%;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -38,26 +37,45 @@
 }
 .nav-menu {
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.25em;
+    width: 80%;
+    font-size: 0.85em;
+    font-weight: 600;
 }
 .nav-menu-items {
     display: flex;
-    width: 20em;
-    justify-content: space-evenly;
+    width: 100%;
 }
 .nav-menu-items a {
-    padding: 0.5em 0;
-    border-bottom: 1px solid transparent;
+    margin-top: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: auto;
     transition: all ease-in-out 0.2s;
     cursor: pointer;
 }
 .nav-menu-items a:hover {
-    border-color: gray;
+    color: hsl(260, 8%, 14%);
 }
 #login-right {
     margin-left: auto;
+}
+.sign-up-btn {
+    color: white;
+    font-weight: bolder;
+    height: 40px;
+    width: 100px;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s;
+}
+.sign-up-btn:hover {
+    cursor: pointer;
+    background-color: hsl(180, 70%, 60%);
+}
+.sign-up-btn a:hover {
+    color: white;
 }
 
 
@@ -98,7 +116,9 @@
     }
     .nav-menu-items-coll a {
         display: flex;
-        height: 5em;
+        height: 75px;
+        font-size: 18px;
+        font-weight: 500;
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid transparent;
@@ -108,6 +128,13 @@
     .nav-menu-items-coll a:hover {
         border-color: black;
     }
+    .nav-menu-items-coll hr {
+        width: 80%;
+        height: 1px;
+        background-color: hsl(257, 7%, 63%);
+        border: none;
+    }
+
     .toggle-button {
         display: flex;
         position: absolute;

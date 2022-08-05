@@ -8,7 +8,7 @@ const Boost = () => {
     return (
     <div className="boost-container">
         <p>Boost your links today</p>
-        <GetStartedBtn />
+        <GetStartedBtn btnText='Get Started' />
     </div>
     );
   }

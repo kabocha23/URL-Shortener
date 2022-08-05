@@ -9,12 +9,15 @@
 }
 
 .intro-text {
-    width: 50%;
-    min-width: 425px;
+    width: 45%;
+    min-width: 375px;
+    margin-right: 5%;
 }
 .intro-text h1 {
     width: 100%;
     margin-right: auto;
+    font-size: 60px;
+    line-height: 70px;
 }
 .intro-text p {
     width: 100%;
@@ -26,10 +29,9 @@
 
 
 
-
 .intro-img {
     width: 50%;
-    min-width: 425px;
+    min-width: 375px;
 
 }
 .intro-img img {

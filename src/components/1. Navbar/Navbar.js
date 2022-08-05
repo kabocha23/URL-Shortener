@@ -36,8 +36,9 @@ const Navbar = ({toggleIsNav, isNavExpanded}) => {
                         <a>Features</a>
                         <a>Pricing</a>
                         <a>Resources</a>
+                        <hr></hr>
                         <a>Login</a>
-                        <a>Sign Up</a>
+                        <button className='sign-up-btn'><a>Sign Up</a></button>
                     </div>                
                 </div>
                 <div className={isNavExpanded 
@@ -50,7 +51,7 @@ const Navbar = ({toggleIsNav, isNavExpanded}) => {
                         <a>Pricing</a>
                         <a>Resources</a>
                         <a id='login-right'>Login</a>
-                        <a>Sign Up</a>
+                        <button className='sign-up-btn'><a>Sign Up</a></button>
                     </div>                
                 </div>
             </div>

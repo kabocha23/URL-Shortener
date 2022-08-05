@@ -2,8 +2,10 @@
 
 .get-started-container button {
     color: white;
-    height: 3.25em;
-    width: 12em;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 50px;
+    width: 175px;
     background-color: hsl(180, 66%, 49%);
     border: none;
     border-radius: 50px;

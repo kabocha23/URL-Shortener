@@ -5,6 +5,7 @@ body, html {
 
 .App {
   width: 100vw;
+  font-family: 'Poppins', sans-serif;
 }
 
 .fixed-pos {
