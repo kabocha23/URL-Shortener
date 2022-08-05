@@ -1,5 +1,5 @@
 import React from 'react';
-
+import GetStartedBtn from '../../components/GetStartedBtn/GetStartedBtn';
 import './Boost.css';
 
 const Boost = () => {
@@ -8,7 +8,7 @@ const Boost = () => {
     return (
     <div className="boost-container">
         <p>Boost your links today</p>
-        <button>Get Started</button>
+        <GetStartedBtn />
     </div>
     );
   }
