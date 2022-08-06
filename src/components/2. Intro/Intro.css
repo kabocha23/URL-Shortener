@@ -10,7 +10,7 @@
 }
 
 .intro-text {
-    width: 45%;
+    width: 50%;
     min-width: 345px;
     margin-right: 5%;
 }
@@ -34,7 +34,7 @@
 
 
 .intro-img {
-    width: 50%;
+    width: 45%;
 }
 .intro-img img {
     max-height: 100%;
