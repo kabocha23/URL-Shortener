@@ -2,8 +2,8 @@
 
 .navbar-container {
     height: 6em;
-    width: 90%;
-    max-width: 1280px;
+    width: 80%;
+    max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
@@ -15,10 +15,10 @@
     flex-flow: row wrap;
     height: 100%;
     width: 100%;
-    color: gray;
+    color: hsl(257, 7%, 63%);;
 }
 
-/* nav sidebar dropdown button */
+/* nav dropdown button */
 .toggle-button {
     display: none;
 }
@@ -29,8 +29,8 @@
 .navbar-brand {
     display: flex;
     height: 100%;
-    width: 20%;
-    justify-content: center;
+    width: 10%;
+    max-width: 200px;
     align-items: center;
     cursor: pointer;
     font-size: 2em;
@@ -38,7 +38,8 @@
 .nav-menu {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 90%;
+    margin-left: auto;
     font-size: 0.85em;
     font-weight: 600;
 }
@@ -56,6 +57,9 @@
 }
 .nav-menu-items a:hover {
     color: hsl(260, 8%, 14%);
+}
+#resources-left {
+    margin-right: auto;
 }
 #login-right {
     margin-left: auto;
@@ -78,6 +82,11 @@
     color: white;
 }
 
+@media (max-width: 1281px) {
+    .nav-menu {
+        width: 85%;
+    }
+}
 
 @media (max-width: 961px) {
     .navbar-container {
@@ -108,16 +117,19 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        height: 50vh;
+        height: 45vh;
         width: 90vw;
         color: white;
         background-color: hsl(257, 27%, 26%);
         border-radius: 20px;
     }
     .nav-menu-items-coll a {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .nvic {
         display: flex;
         height: 75px;
-        font-size: 18px;
         font-weight: 500;
         justify-content: center;
         align-items: center;
@@ -125,9 +137,12 @@
         transition: all ease-in-out 0.2s;
         cursor: pointer;
     }
-    .nav-menu-items-coll a:hover {
-        border-color: black;
+    .sign-up-btn {
+        width: 80%;
+        height: 50px;
     }
+
+
     .nav-menu-items-coll hr {
         width: 80%;
         height: 1px;
@@ -135,6 +150,12 @@
         border: none;
     }
 
+    .sign-up-btn:hover {
+        cursor: pointer;
+        background-color: hsl(180, 70%, 60%);
+    }
+
+    
     .toggle-button {
         display: flex;
         position: absolute;
@@ -177,8 +198,4 @@
         display: none;
     }
 
-    .navbar-brand {
-        margin-right: auto;
-        z-index: 7;
-    }
 }

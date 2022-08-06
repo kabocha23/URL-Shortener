@@ -1,11 +1,14 @@
 
 .url-container {
-    width: 90%;
-    max-width: 1280px;
+    width: 80%;
+    max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .url-input {
+    height: 150px;
+    border-radius: 10px;
     background-color: hsl(257, 27%, 26%);
+    background-image: url('../../images/bg-shorten-desktop.svg');
 }

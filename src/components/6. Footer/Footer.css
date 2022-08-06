@@ -2,14 +2,14 @@
 
 .footer-container {
     background-color: hsl(260, 8%, 14%);
-    padding: 4em 0;
+    padding: 4em 0 3em 0;
 }
 
 
 .footer-content {
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
+    width: 80%;
     max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
@@ -35,7 +35,6 @@
     flex-flow: row wrap;
     width: 60%;
     justify-content: space-evenly;
-    font-weight: 700;
     font-size: 0.8em;
     color: white;
 }
@@ -50,20 +49,26 @@
 .footer-body-sub ul li {
     list-style-type: none;
     margin-right: 10px;
+    margin-bottom: 10px;
     color: hsl(0, 0%, 75%);
+    font-weight: 500;
 }
 .footer-body-sub ul li:hover {
-    text-decoration: underline;
+    color: hsl(180, 66%, 49%);
 }
 .footer-body-sub ul li a {
     text-decoration: none;
     cursor: pointer;
 }
 .foot-sub-head {
-    margin-bottom: 25px!important;
+    margin-bottom: 20px!important;
 }
 .foot-sub-head a {
-    color: white!important;
+    color: white;
+    font-weight: 700;
+}
+.foot-sub-head a:hover {
+    color: hsl(180, 66%, 49%);
 }
 
 

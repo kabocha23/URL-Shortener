@@ -2,26 +2,30 @@
 .intro-container {
     display: flex;
     flex-flow: row wrap-reverse;
-    width: 90%;
-    max-width: 1280px;
+    width: 80%;
+    max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
 }
 
 .intro-text {
     width: 45%;
-    min-width: 375px;
+    min-width: 345px;
     margin-right: 5%;
 }
 .intro-text h1 {
     width: 100%;
     margin-right: auto;
+    margin-bottom: 0;
     font-size: 60px;
     line-height: 70px;
 }
 .intro-text p {
     width: 100%;
     margin-right: auto;
+    margin-bottom: 40px;
+    color: hsl(257, 7%, 63%);
 }
 .intro-text button {
     width: 10em;
@@ -31,8 +35,6 @@
 
 .intro-img {
     width: 50%;
-    min-width: 375px;
-
 }
 .intro-img img {
     max-height: 100%;

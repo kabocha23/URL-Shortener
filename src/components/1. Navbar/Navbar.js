@@ -5,7 +5,6 @@ import './Navbar.css';
 const Navbar = ({toggleIsNav, isNavExpanded}) => {
 
 
-
     return(
         <div className='navbar-container'>
             <div className='navbar-sub'>
@@ -33,11 +32,11 @@ const Navbar = ({toggleIsNav, isNavExpanded}) => {
                     }
                 >
                     <div className='nav-menu-items-coll'>
-                        <a>Features</a>
-                        <a>Pricing</a>
-                        <a>Resources</a>
+                        <a className='nvic'>Features</a>
+                        <a className='nvic'>Pricing</a>
+                        <a className='nvic'>Resources</a>
                         <hr></hr>
-                        <a>Login</a>
+                        <a className='nvic'>Login</a>
                         <button className='sign-up-btn'><a>Sign Up</a></button>
                     </div>                
                 </div>
@@ -49,7 +48,7 @@ const Navbar = ({toggleIsNav, isNavExpanded}) => {
                     <div className='nav-menu-items'>
                         <a>Features</a>
                         <a>Pricing</a>
-                        <a>Resources</a>
+                        <a id='resources-left'>Resources</a>
                         <a id='login-right'>Login</a>
                         <button className='sign-up-btn'><a>Sign Up</a></button>
                     </div>                
