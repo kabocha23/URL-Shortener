@@ -1,0 +1,22 @@
+
+.selling-points-container {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: aliceblue;
+}
+
+
+.selling-img-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(257, 27%, 26%);
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+.selling-img-container {
+
+}
