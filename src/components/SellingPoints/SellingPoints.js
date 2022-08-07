@@ -9,8 +9,11 @@ const SellingPoints = ({ spImage, headerText, bodyText }) => {
             <div className='selling-img-container'>
                 <img src={require('../../images/'+spImage+'.svg')}></img>
             </div>
-            <p className='selling-header-text'>{headerText}</p>
-            <p className='selling-body-text'>{bodyText}</p>
+            <div className='selling-text-container'>
+                <p className='selling-header-text'>{headerText}</p>
+                <p className='selling-body-text'>{bodyText}</p>
+            </div>
+
         </div>
     );
   }

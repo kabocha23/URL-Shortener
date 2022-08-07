@@ -8,8 +8,8 @@ const Advanced = ({ advancedStatsData }) => {
         <div className="advanced-container">
             <div className='advanced-sub'>
                 <div className='advanced-text'>
-                    <p>Advanced Statistics</p>
-                    <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+                    <p className='advanced-text-head'>Advanced Statistics</p>
+                    <p className='advanced-text-subhead'>Track how your links are performing across the web with our advanced statistics dashboard.</p>
                 </div>
                 <div className='advanced-benefits'>
                     {advancedStatsData.map((advancedStatsData) => (
