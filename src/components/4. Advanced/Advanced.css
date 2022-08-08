@@ -29,7 +29,39 @@
     color: hsl(257, 7%, 63%);
 }
 
-.advanced-benefits {
+.advanced-selling {
     display: flex;
     flex-flow: row wrap;
+}
+
+.advanced-selling-1 {
+    margin-top: 0;
+}
+.advanced-selling-2 {
+    margin-top: 50px;
+}
+.advanced-selling-3 {
+    margin-top: 100px;
+}
+
+
+@media (max-width: 1281px) {
+    .advanced-selling {
+
+    }
+    .advanced-selling-1 {
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .advanced-selling-2 {
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .advanced-selling-3 {
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

@@ -167,21 +167,22 @@
         right: 0;
         z-index: 10;
     }
-    .toggle-button button {
+    .toggle-button-btn {
         border: none;
         height: 40px;
         width: 40px;
         background-color: transparent;
         cursor: pointer;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 25px;
         color: gray;
     }
-    .toggle-button button:hover {
+    .toggle-button-btn:hover {
         transition: border 0.2s ease-in-out;
     }
     .toggle-button-btn.expanded {
-        color: hsl(0, 0%, 63%);
+        font-size: 25px;
+        color: white;
     }
 
     .overlay {

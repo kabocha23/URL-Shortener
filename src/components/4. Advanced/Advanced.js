@@ -11,14 +11,16 @@ const Advanced = ({ advancedStatsData }) => {
                     <p className='advanced-text-head'>Advanced Statistics</p>
                     <p className='advanced-text-subhead'>Track how your links are performing across the web with our advanced statistics dashboard.</p>
                 </div>
-                <div className='advanced-benefits'>
+                <div className='advanced-selling'>
                     {advancedStatsData.map((advancedStatsData) => (
-                        <SellingPoints
-                            key={advancedStatsData.id}
-                            spImage={advancedStatsData.spImage}
-                            headerText={advancedStatsData.headerText}
-                            bodyText={advancedStatsData.bodyText}
-                        />
+                        <div className={'advanced-selling-'+advancedStatsData.id}>
+                            <SellingPoints
+                                key={advancedStatsData.id}
+                                spImage={advancedStatsData.spImage}
+                                headerText={advancedStatsData.headerText}
+                                bodyText={advancedStatsData.bodyText}
+                            />
+                        </div> 
                     ))}
                 </div>                
             </div>
