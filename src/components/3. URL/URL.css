@@ -41,4 +41,9 @@
     border: none;
     font-size: 18px;
     font-weight: 700;
+    transition: all ease-in-out 0.2s;
+}
+.url-input button:hover {
+    cursor: pointer;
+    background-color: hsl(180, 70%, 60%);
 }

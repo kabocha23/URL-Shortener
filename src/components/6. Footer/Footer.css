@@ -83,3 +83,6 @@
     margin-right: 10px;
     cursor: pointer;
 }
+.footer-contacts a:hover {
+    filter: sepia(98%) saturate(2187%) hue-rotate(121deg) brightness(88%) contrast(81%);
+}

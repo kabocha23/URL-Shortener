@@ -14,9 +14,8 @@ const Advanced = ({ advancedStatsData }) => {
                 </div>
                 <div className='advanced-selling'>
                     {advancedStatsData.map((advancedStatsData) => (
-                        <div className={'advanced-selling-'+advancedStatsData.id}>
+                        <div className={'advanced-selling-'+advancedStatsData.id} key={advancedStatsData.id}>
                             <SellingPoints
-                                key={advancedStatsData.id}
                                 spImage={advancedStatsData.spImage}
                                 headerText={advancedStatsData.headerText}
                                 bodyText={advancedStatsData.bodyText}
