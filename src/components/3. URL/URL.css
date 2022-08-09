@@ -7,8 +7,38 @@
 }
 
 .url-input {
+    display: flex;
     height: 150px;
     border-radius: 10px;
     background-color: hsl(257, 27%, 26%);
     background-image: url('../../images/bg-shorten-desktop.svg');
+}
+
+.url-input input {
+    height: 60px;
+    width: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.url-input input::placeholder {
+    text-indent: 25px;
+    font-size: 18px;
+}
+
+.url-input button {
+    height: 60px;
+    width: 175px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: auto;
+    border-radius: 10px;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
 }

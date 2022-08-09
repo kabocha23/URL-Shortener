@@ -9,10 +9,22 @@
 }
 
 .advanced-sub {
+    position: relative;
     width: 80%;
     max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
+}
+.advanced-sub hr {
+    position: absolute;
+    height: 10px;
+    width: 90%;
+    top: 65%;
+    left: 5%;
+    right: 5%;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    z-index: 10;
 }
 
 
@@ -32,16 +44,21 @@
 .advanced-selling {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
+    z-index: 11;
 }
 
 .advanced-selling-1 {
     margin-top: 0;
+    z-index: 11;
 }
 .advanced-selling-2 {
-    margin-top: 50px;
+    margin-top: 35px;
+    z-index: 11;
 }
 .advanced-selling-3 {
-    margin-top: 100px;
+    margin-top: 70px;
+    z-index: 11;
 }
 
 
