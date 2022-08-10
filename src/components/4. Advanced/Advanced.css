@@ -30,7 +30,7 @@
 
 .advanced-text {
     height: 250px;
-    padding: 0 30%;
+    padding: 0 20%;
     text-align: center;
     cursor: default;
 }
@@ -39,6 +39,7 @@
     font-weight: 700;
 }
 .advanced-text-subhead {
+    font-size: 20px;
     color: hsl(257, 7%, 63%);
 }
 
@@ -70,17 +71,21 @@
     }
     .advanced-selling-1 {
         margin-top: 75px;
-        margin-left: auto;
-        margin-right: auto;
     }
     .advanced-selling-2 {
         margin-top: 75px;
-        margin-left: auto;
-        margin-right: auto;
     }
     .advanced-selling-3 {
         margin-top: 75px;
-        margin-left: auto;
-        margin-right: auto;
+    }
+}
+
+@media (max-width: 999px) {
+    .advanced-sub hr {
+        height: 50%;
+        width: 10px;
+        top: 40%;
+        left: 50%;
+        right: 50%;
     }
 }

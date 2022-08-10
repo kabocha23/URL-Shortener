@@ -3,8 +3,8 @@
     position: relative;
     width: 300px;
     height: 200px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 50px 30px 0px 30px;
     background-color: white;
 }
@@ -22,9 +22,6 @@
     top: -40px;
 }
 
-.selling-text-container {
-
-}
 
 .selling-header-text {
     font-size: 18px;

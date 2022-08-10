@@ -14,9 +14,9 @@ const App = () => {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [urlSubmission, setUrlSubmission] = useState('')
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState('');
 
   const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
@@ -26,22 +26,24 @@ const App = () => {
   const submitURL = e => {
     if(e) e.preventDefault();
     
-    console.log(urlSubmission)
     let apiURL = 'https://api.shrtco.de/v2/shorten?url='+urlSubmission;
-    console.log(apiURL)
+
     setLoading(true);
 
     axios.get(apiURL).then((response) => {
-        setData(response.data)
-        console.log(response.data)
+        setData([...data, response.data]);
+        console.log(response.data);
     }).catch((err) => {
         setError(err);
+        console.log(err);
     }).finally(() => {
         setLoading(false);
-    })
+    });
 
     // clear input value
     setUrlSubmission('');
+    
+    return { data, error, loading };
   }
 
 
@@ -56,6 +58,9 @@ const App = () => {
         urlSubmission={urlSubmission}
         setUrlSubmission={setUrlSubmission}
         submitURL={submitURL}
+        data={data}
+        error={error}
+        loading={loading}
       />
       <Advanced 
         advancedStatsData={advancedStatsData} 

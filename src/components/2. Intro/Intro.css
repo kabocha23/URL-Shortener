@@ -10,9 +10,9 @@
 }
 
 .intro-text {
-    width: 50%;
+    width: 45%;
     min-width: 345px;
-    margin-right: 5%;
+    margin-right: 10%;
     cursor: default;
 }
 .intro-text h1 {
@@ -24,9 +24,11 @@
 }
 .intro-text p {
     width: 100%;
+    margin-top: 5px;
     margin-right: auto;
     margin-bottom: 40px;
     color: hsl(257, 7%, 63%);
+    font-size: 20px;
 }
 .intro-text button {
     width: 10em;

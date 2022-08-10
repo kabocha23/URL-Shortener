@@ -16,11 +16,13 @@
 
 .url-input form {
     display: flex;
+    flex-flow: row wrap;
     width: 100%;
 }
 .url-input input {
     height: 60px;
     width: 75%;
+    min-width: 585.5px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -36,7 +38,8 @@
 
 .url-input button {
     height: 60px;
-    width: 175px;
+    width: 15%;
+    min-width: 115.5px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
@@ -52,4 +55,29 @@
 .url-input button:hover {
     cursor: pointer;
     background-color: hsl(180, 70%, 60%);
+}
+
+@media(max-width: 961px) {
+
+    .url-input {
+        height: 175px;
+    }
+
+    .url-input input {
+        height: 50px;
+        width: 80%;
+        max-width: 500px;
+        min-width: 100px;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .url-input button {
+        height: 50px;
+        width: 80%;
+        max-width: 500px;
+        min-width: 100px;
+        margin-left: auto;
+        margin-top: 10px;
+    }
 }
