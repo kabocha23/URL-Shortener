@@ -13,6 +13,7 @@
     width: 50%;
     min-width: 345px;
     margin-right: 5%;
+    cursor: default;
 }
 .intro-text h1 {
     width: 100%;

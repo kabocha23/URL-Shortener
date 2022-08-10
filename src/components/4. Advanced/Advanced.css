@@ -32,6 +32,7 @@
     height: 250px;
     padding: 0 30%;
     text-align: center;
+    cursor: default;
 }
 .advanced-text-head {
     font-size: 30px;
@@ -46,6 +47,7 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     z-index: 11;
+    cursor: default;
 }
 
 .advanced-selling-1 {

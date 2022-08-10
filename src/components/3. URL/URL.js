@@ -1,15 +1,25 @@
 import React from 'react';
+import useFetch from '../../hooks/useFetch'
 
 import './URL.css';
 
-const URL = () => {
+const URL = ( { urlSubmission, setUrlSubmission, submitURL }) => {
 
 
     return (
         <div className="url-container">
             <div className="url-input">
-                <input placeholder='Shorten a link here...'></input>
-                <button><a>Shorten It!</a></button>
+                <form onSubmit={submitURL}>
+                    <input 
+                        type='text' 
+                        name='submitURL' 
+                        placeholder='Shorten a link here...'
+                        onChange={e => setUrlSubmission(e.target.value)}
+                        value={urlSubmission || ''}
+                    ></input>
+                    <button type='submit'>Shorten It!</button>                    
+                </form>
+
             </div>
             <div className="url-history">
 

@@ -14,6 +14,10 @@
     background-image: url('../../images/bg-shorten-desktop.svg');
 }
 
+.url-input form {
+    display: flex;
+    width: 100%;
+}
 .url-input input {
     height: 60px;
     width: 75%;
@@ -22,6 +26,8 @@
     margin-left: auto;
     margin-right: 10px;
     border-radius: 10px;
+    text-indent: 25px;
+    font-size: 18px;
 }
 .url-input input::placeholder {
     text-indent: 25px;
