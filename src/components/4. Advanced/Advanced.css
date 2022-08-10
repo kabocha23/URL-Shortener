@@ -45,7 +45,7 @@
 
 .advanced-selling {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     z-index: 11;
     cursor: default;
@@ -66,8 +66,18 @@
 
 
 @media (max-width: 1281px) {
-    .advanced-selling {
 
+    .advanced-text {
+        padding: 0;
+    }
+    .advanced-text-subhead {
+        font-size: 18px;
+    }
+
+    .advanced-selling {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
     }
     .advanced-selling-1 {
         margin-top: 75px;
@@ -78,9 +88,7 @@
     .advanced-selling-3 {
         margin-top: 75px;
     }
-}
 
-@media (max-width: 999px) {
     .advanced-sub hr {
         height: 50%;
         width: 10px;

@@ -1,14 +1,24 @@
 
 .url-container {
-    width: 80%;
-    max-width: 1281px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
 }
-
+.url-sub {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    width: 80%;
+    height: auto;
+    max-width: 1281px;
+    top: 190px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .url-input {
     display: flex;
     height: 150px;
+    margin-bottom: 25px;
     border-radius: 10px;
     background-color: hsl(257, 27%, 26%);
     background-image: url('../../images/bg-shorten-desktop.svg');
@@ -53,6 +63,51 @@
     transition: all ease-in-out 0.2s;
 }
 .url-input button:hover {
+    cursor: pointer;
+    background-color: hsl(180, 70%, 60%);
+}
+
+
+.url-history {
+    height: 350px;
+    overflow: scroll;
+}
+.url-history-link {
+    display: flex;
+    height: 75px;
+    width: 96%;
+    padding: 0 2%;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+}
+.url-history-link a:hover {
+    cursor: pointer;
+}
+#uhl-original {
+    margin-right: auto;
+}
+#uhl-shortened {
+    margin-left: auto;
+    color: hsl(180, 66%, 49%);
+}
+#url-shortened:hover {
+    color: hsl(180, 70%, 60%);
+}
+
+#uhl-copy {
+    width: 75px;
+    height: 50%;
+    margin-left: 25px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: hsl(180, 66%, 49%);
+    font-size: 14px;
+    font-weight: 700;
+}
+#uhl-copy:hover {
     cursor: pointer;
     background-color: hsl(180, 70%, 60%);
 }

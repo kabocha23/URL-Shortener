@@ -5,7 +5,7 @@ const GetStartedBtn = ({ btnText }) => {
 
 
     return (
-        <div className="get-started-container">
+        <div className='get-started-container'>
             <button><a>{btnText}</a></button>
         </div>
     );

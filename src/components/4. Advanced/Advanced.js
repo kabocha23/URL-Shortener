@@ -5,7 +5,7 @@ import './Advanced.css';
 const Advanced = ({ advancedStatsData }) => {
 
     return (
-        <div className="advanced-container">
+        <div className='advanced-container'>
             <div className='advanced-sub'>
                 <hr></hr>
                 <div className='advanced-text'>

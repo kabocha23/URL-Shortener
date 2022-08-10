@@ -27,7 +27,7 @@ const App = () => {
     if(e) e.preventDefault();
     
     let apiURL = 'https://api.shrtco.de/v2/shorten?url='+urlSubmission;
-
+    console.log(apiURL)
     setLoading(true);
 
     axios.get(apiURL).then((response) => {
@@ -38,6 +38,7 @@ const App = () => {
         console.log(err);
     }).finally(() => {
         setLoading(false);
+        console.log(loading);
     });
 
     // clear input value

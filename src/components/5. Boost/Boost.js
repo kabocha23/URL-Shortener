@@ -6,7 +6,7 @@ const Boost = () => {
 
 
     return (
-    <div className="boost-container">
+    <div className='boost-container'>
         <p>Boost your links today</p>
         <GetStartedBtn btnText='Get Started' />
     </div>

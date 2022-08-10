@@ -6,7 +6,7 @@
     max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .intro-text {
@@ -17,6 +17,7 @@
 }
 .intro-text h1 {
     width: 100%;
+    margin-top: 10%;
     margin-right: auto;
     margin-bottom: 0;
     font-size: 60px;
