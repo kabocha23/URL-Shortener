@@ -17,6 +17,7 @@ const App = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [copyText, setCopyText] = useState('');
 
   const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
@@ -25,9 +26,10 @@ const App = () => {
 
   const submitURL = e => {
     if(e) e.preventDefault();
+    console.log('Shorten It! clicked')
     
     let apiURL = 'https://api.shrtco.de/v2/shorten?url='+urlSubmission;
-    console.log(apiURL)
+
     setLoading(true);
 
     axios.get(apiURL).then((response) => {
@@ -41,10 +43,15 @@ const App = () => {
         console.log(loading);
     });
 
-    // clear input value
     setUrlSubmission('');
     
     return { data, error, loading };
+  }
+
+
+  const copyShortenedURL = async (shortLink) => {
+    console.log(shortLink);
+    await navigator.clipboard.writeText(shortLink);
   }
 
 
@@ -59,6 +66,7 @@ const App = () => {
         urlSubmission={urlSubmission}
         setUrlSubmission={setUrlSubmission}
         submitURL={submitURL}
+        copyShortenedURL={copyShortenedURL}
         data={data}
         error={error}
         loading={loading}
