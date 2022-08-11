@@ -25,7 +25,7 @@ const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, da
                         <div className='url-history-link' key={data.result.code}>
                             <a className='uhl-original' href={data.result.original_link}>{data.result.original_link}</a>
                             <a id={data.result.code} className='uhl-shortened' href={data.result.full_short_link2}>{data.result.full_short_link2}</a>
-                            <button id='uhl-copy' onClick={copyShortenedURL}>Copy</button>
+                            <button id='uhl-copy' onClick={copyShortenedURL(data.result.code)}>Copy</button>
                         </div>
                     ))}
                 </div>

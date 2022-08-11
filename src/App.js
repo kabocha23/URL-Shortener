@@ -17,7 +17,6 @@ const App = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [copyText, setCopyText] = useState('');
 
   const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
@@ -49,9 +48,10 @@ const App = () => {
   }
 
 
-  const copyShortenedURL = async (shortLink) => {
-    console.log(shortLink);
-    await navigator.clipboard.writeText(shortLink);
+  const copyShortenedURL = shortLink => () => {
+    let copiedText = document.getElementById(shortLink).innerText;
+    console.log(copiedText);
+    navigator.clipboard.writeText(copiedText);
   }
 
 
