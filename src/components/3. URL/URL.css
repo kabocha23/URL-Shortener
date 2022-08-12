@@ -4,6 +4,8 @@
     width: 100%;
     background-color: hsl(0, 0%, 95%);
 }
+
+/* container for input form and links history */
 .url-sub {
     display: flex;
     flex-flow: column wrap;
@@ -14,16 +16,21 @@
     top: 190px;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
+
+/* form for entering links */
 .url-input {
     position: relative;
     display: flex;
     height: 150px;
+    width: 100%;
     margin-bottom: 25px;
     border-radius: 10px;
     background-color: hsl(257, 27%, 26%);
     background-image: url('../../images/bg-shorten-desktop.svg');
 }
+/* loading display */
 .loading-text {
     display: flex;
     justify-content: center;
@@ -60,7 +67,7 @@
     text-indent: 25px;
     font-size: 18px;
 }
-
+/* Shorten It! button */
 .url-input button {
     height: 60px;
     width: 15%;
@@ -82,13 +89,18 @@
     background-color: hsl(180, 70%, 60%);
 }
 
-
+/* list of past searches */
 .url-history {
     height: 350px;
-    overflow: scroll;
+    width: 100%;
+    padding-right: 10px;
+    box-sizing: content-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .url-history-link {
     display: flex;
+    flex-flow: row wrap;
     height: 75px;
     width: 96%;
     padding: 0 2%;
@@ -105,10 +117,13 @@
 }
 .uhl-original {
     margin-right: auto;
-    color: hsl(257, 7%, 63%);
+    color: hsl(260, 8%, 14%);
 }
 .uhl-original:hover {
-    color: hsl(260, 8%, 14%);
+    color: hsl(180, 70%, 60%);
+}
+.url-history-link hr {
+    display: none;
 }
 .uhl-shortened {
     margin-left: auto;
@@ -117,8 +132,8 @@
 .url-shortened:hover {
     color: hsl(180, 70%, 60%);
 }
-
-#uhl-copy {
+/* copy button */
+.uhl-copy {
     width: 75px;
     height: 50%;
     margin-left: 25px;
@@ -129,9 +144,21 @@
     font-size: 14px;
     font-weight: 700;
 }
-#uhl-copy:hover {
+.uhl-copy:hover {
     cursor: pointer;
     background-color: hsl(180, 70%, 60%);
+}
+
+.url-history::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.url-history::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.url-history::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 95%);
 }
 
 @media(max-width: 961px) {
@@ -156,5 +183,41 @@
         min-width: 100px;
         margin-left: auto;
         margin-top: 10px;
+    }
+}
+
+@media(max-width: 641px) {
+    .url-history-link {
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 175px;
+    }
+    .uhl-original {
+        display: flex;
+        margin-left: 10px;
+        height: 30%;
+        align-items: center;
+    }
+    .url-history-link hr {
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin: 0;
+        border: none;
+        background-color: hsl(0, 0%, 95%);
+    }
+    .uhl-shortened {
+        display: flex;
+        height: 30%;        
+        margin-left: 10px;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .uhl-copy {
+        height: 25%;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

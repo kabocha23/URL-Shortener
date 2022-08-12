@@ -17,6 +17,7 @@ const App = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [copyBtnText, setCopyBtnText] = useState('Copy');
 
   const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
@@ -25,7 +26,6 @@ const App = () => {
 
   const submitURL = e => {
     if(e) e.preventDefault();
-    console.log('Shorten It! clicked')
     
     let apiURL = 'https://api.shrtco.de/v2/shorten?url='+urlSubmission;
 
@@ -47,12 +47,14 @@ const App = () => {
     return { data, error, loading };
   }
 
-
   const copyShortenedURL = shortLink => () => {
     let copiedText = document.getElementById(shortLink).innerText;
-    console.log(copiedText);
     navigator.clipboard.writeText(copiedText);
-  }
+    setCopyBtnText('Copied!');
+    setTimeout(() => {
+        setCopyBtnText('Copy');
+    }, 2000);
+};
 
 
   return (
@@ -67,6 +69,7 @@ const App = () => {
         setUrlSubmission={setUrlSubmission}
         submitURL={submitURL}
         copyShortenedURL={copyShortenedURL}
+        copyBtnText={copyBtnText}
         data={data}
         error={error}
         loading={loading}

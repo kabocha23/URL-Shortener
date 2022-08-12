@@ -54,12 +54,12 @@
     font-weight: 500;
     transition: all ease-in-out 0.2s;
 }
-.footer-body-sub ul li:hover {
-    color: hsl(180, 66%, 49%);
-}
 .footer-body-sub ul li a {
     text-decoration: none;
     cursor: pointer;
+}
+.footer-body-sub ul li a:hover {
+    color: hsl(180, 66%, 49%);
 }
 .foot-sub-head {
     margin-bottom: 20px!important;
@@ -83,9 +83,9 @@
 .footer-contacts a {
     margin-left: 10px;
     margin-right: 10px;
-    cursor: pointer;
-    transition: all ease-in-out 0.2s;
 }
-.footer-contacts a:hover {
+.footer-contacts img:hover {
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
     filter: sepia(98%) saturate(2187%) hue-rotate(121deg) brightness(88%) contrast(81%);
 }

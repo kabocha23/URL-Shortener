@@ -2,7 +2,7 @@ import React from 'react';
 
 import './URL.css';
 
-const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, data, error, loading }) => {
+const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, copyBtnText, data, error, loading }) => {
 
     return (
         <div className='url-container'>
@@ -21,13 +21,19 @@ const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, da
                     </form>
                 </div>
                 <div className='url-history'>
-                    {data.map((data) => (
-                        <div className='url-history-link' key={data.result.code}>
-                            <a className='uhl-original' href={data.result.original_link}>{data.result.original_link}</a>
-                            <a id={data.result.code} className='uhl-shortened' href={data.result.full_short_link2}>{data.result.full_short_link2}</a>
-                            <button id='uhl-copy' onClick={copyShortenedURL(data.result.code)}>Copy</button>
+                    {data.length 
+                         ? data.map((data) => (
+                            <div className='url-history-link' key={data.result.code}>
+                                <a className='uhl-original' href={data.result.original_link}>{data.result.original_link}</a>
+                                <hr></hr>
+                                <a id={data.result.code} className='uhl-shortened' href={data.result.full_short_link2}>{data.result.full_short_link2}</a>
+                                <button className='uhl-copy' onClick={copyShortenedURL(data.result.code)}>{copyBtnText}</button>
+                            </div>
+                        ))
+                        : <div>
+                            <p>Type the desired url above and the shortened version will appear here!</p>
                         </div>
-                    ))}
+                    }
                 </div>
             </div>
         </div>
