@@ -24,10 +24,21 @@ const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, co
                     {data.length 
                          ? data.map((data) => (
                             <div className='url-history-link' key={data.result.code}>
-                                <a className='uhl-original' href={data.result.original_link}>{data.result.original_link}</a>
+                                <a 
+                                    className='uhl-original' 
+                                    href={data.result.original_link}
+                                >{data.result.original_link}</a>
                                 <hr></hr>
-                                <a id={data.result.code} className='uhl-shortened' href={data.result.full_short_link2}>{data.result.full_short_link2}</a>
-                                <button className='uhl-copy' onClick={copyShortenedURL(data.result.code)}>{copyBtnText}</button>
+                                <a 
+                                    id={data.result.code} 
+                                    className='uhl-shortened' 
+                                    href={data.result.full_short_link2}
+                                >{data.result.full_short_link2}</a>
+                                <button 
+                                    id={'uhl-copy'+data.result.code} 
+                                    className={copyBtnText == 'Copied!' ? 'uhl-copy copied' : 'uhl-copy'} 
+                                    onClick={copyShortenedURL(data.result.code)}
+                                >{copyBtnText}</button>
                             </div>
                         ))
                         : <div>
