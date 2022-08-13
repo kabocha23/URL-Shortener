@@ -1,41 +1,36 @@
 
 .url-container {
-    position: relative;
     width: 100%;
-    background-color: hsl(0, 0%, 95%);
-}
-
-/* container for input form and links history */
-.url-sub {
-    display: flex;
-    flex-flow: column wrap;
-    position: absolute;
-    width: 80%;
-    height: auto;
-    max-width: 1281px;
-    top: 190px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
 }
 
 /* form for entering links */
+.url-sub-1 {
+    background: linear-gradient(
+        to top,
+        hsl(0, 0%, 95%) 0%,
+        hsl(0, 0%, 95%) 50%,
+        white 50%,
+        white 100%
+    )
+}
 .url-input {
     position: relative;
     display: flex;
     height: 150px;
-    width: 100%;
-    margin-bottom: 25px;
+    width: 80%;
+    max-width: 1281px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
     background-color: hsl(257, 27%, 26%);
     background-image: url('../../images/bg-shorten-desktop.svg');
 }
 /* loading display */
 .loading-text {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -90,11 +85,17 @@
 }
 
 /* list of past searches */
+.url-sub-2 {
+    height: 100%;
+    padding-top: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
 .url-history {
-    height: 350px;
-    width: 100%;
-    padding-right: 10px;
-    box-sizing: content-box;
+    max-height: 300px;
+    width: 80%;
+    max-width: 1281px;
+    margin-left: auto;
+    margin-right: auto;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -102,8 +103,7 @@
     display: flex;
     flex-flow: row wrap;
     height: 75px;
-    width: 96%;
-    padding: 0 2%;
+    width: 100%;
     margin-bottom: 15px;
     background-color: white;
     border-radius: 10px;
@@ -116,7 +116,7 @@
     cursor: pointer;
 }
 .uhl-original {
-    margin-right: auto;
+    margin-left: 25px;
     color: hsl(260, 8%, 14%);
 }
 .uhl-original:hover {
@@ -137,31 +137,34 @@
     width: 75px;
     height: 50%;
     margin-left: 25px;
+    margin-right: 25px;
     border-radius: 5px;
     border: none;
     color: white;
     background-color: hsl(180, 66%, 49%);
     font-size: 14px;
     font-weight: 700;
-}
-.uhl-copy.copied {
-    background-color: hsl(257, 27%, 26%)!important;
+    transition: all ease-in-out 0.2s;
 }
 .uhl-copy:hover {
     cursor: pointer;
     background-color: hsl(180, 70%, 60%);
 }
 
-.url-history::-webkit-scrollbar {
-    width: 10px;
+.url-history-temp {
+    text-align: center;
 }
-  
+
+.url-history::-webkit-scrollbar {
+    width: 5px;
+}
+ 
 .url-history::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
-
+ 
 .url-history::-webkit-scrollbar-thumb {
-    background-color: hsl(0, 0%, 95%);
+  background-color: darkgrey;
 }
 
 @media(max-width: 961px) {
@@ -190,6 +193,12 @@
 }
 
 @media(max-width: 641px) {
+    .url-sub-2 {
+        max-height: 600px;
+    }
+    .url-history {
+        height: auto;
+    }
     .url-history-link {
         flex-flow: column nowrap;
         align-items: center;
@@ -199,13 +208,14 @@
     .uhl-original {
         display: flex;
         margin-left: 10px;
+        margin-right: auto;
         height: 30%;
         align-items: center;
     }
     .url-history-link hr {
         display: block;
         width: 100%;
-        height: 1px;
+        height: 2px;
         margin: 0;
         border: none;
         background-color: hsl(0, 0%, 95%);

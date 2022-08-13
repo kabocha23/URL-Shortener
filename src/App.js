@@ -17,7 +17,6 @@ const App = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [copyBtnText, setCopyBtnText] = useState('Copy');
 
   const toggleIsNav = () => {
       setIsNavExpanded(!isNavExpanded)
@@ -37,6 +36,7 @@ const App = () => {
     }).catch((err) => {
         setError(err);
         console.log(err);
+        console.log(err.response.data.error);
     }).finally(() => {
         setLoading(false);
         console.log(loading);
@@ -48,11 +48,16 @@ const App = () => {
   }
 
   const copyShortenedURL = shortLink => () => {
-    let copiedText = document.getElementById(shortLink).innerText;
+    const copiedText = document.getElementById(shortLink).innerText;
     navigator.clipboard.writeText(copiedText);
-    setCopyBtnText('Copied!');
+
+    const copyBtnId = 'uhl-copy' + shortLink;
+    const copyBtn = document.getElementById(copyBtnId);
+    copyBtn.textContent = 'Copied!';
+    copyBtn.style.background = 'hsl(257, 27%, 26%)';
     setTimeout(() => {
-        setCopyBtnText('Copy');
+      copyBtn.textContent ='Copy';
+      copyBtn.style.background = 'hsl(180, 66%, 49%)';
     }, 2000);
 };
 
@@ -69,7 +74,6 @@ const App = () => {
         setUrlSubmission={setUrlSubmission}
         submitURL={submitURL}
         copyShortenedURL={copyShortenedURL}
-        copyBtnText={copyBtnText}
         data={data}
         error={error}
         loading={loading}

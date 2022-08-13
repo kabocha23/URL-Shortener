@@ -2,11 +2,11 @@ import React from 'react';
 
 import './URL.css';
 
-const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, copyBtnText, data, error, loading }) => {
+const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, copied, data, error, loading }) => {
 
     return (
         <div className='url-container'>
-            <div className='url-sub'>
+            <div className='url-sub-1'>
                 <div className='url-input'>
                     {loading && <div className="loading-text"><p>Loading you shortened link...</p></div>}
                     <form onSubmit={submitURL}>
@@ -20,6 +20,8 @@ const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, co
                         <button type='submit'>Shorten It!</button>                    
                     </form>
                 </div>
+            </div>
+            <div className='url-sub-2'>
                 <div className='url-history'>
                     {data.length 
                          ? data.map((data) => (
@@ -36,12 +38,12 @@ const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, co
                                 >{data.result.full_short_link2}</a>
                                 <button 
                                     id={'uhl-copy'+data.result.code} 
-                                    className={copyBtnText == 'Copied!' ? 'uhl-copy copied' : 'uhl-copy'} 
+                                    className='uhl-copy'
                                     onClick={copyShortenedURL(data.result.code)}
-                                >{copyBtnText}</button>
+                                >Copy</button>
                             </div>
                         ))
-                        : <div>
+                        : <div className='url-history-temp'>
                             <p>Type the desired url above and the shortened version will appear here!</p>
                         </div>
                     }

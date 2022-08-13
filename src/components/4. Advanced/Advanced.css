@@ -4,7 +4,6 @@
 .advanced-container {
     width: 100%;
     background-color: hsl(0, 0%, 95%);
-    padding-top: 500px;
     padding-bottom: 100px;
 }
 
@@ -14,6 +13,7 @@
     max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
 }
 .advanced-sub hr {
     position: absolute;
@@ -89,6 +89,9 @@
         margin-top: 75px;
     }
 
+    .advanced-sub {
+        padding-top: 25px;
+    }
     .advanced-sub hr {
         height: 50%;
         width: 10px;

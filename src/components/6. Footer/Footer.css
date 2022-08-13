@@ -23,10 +23,14 @@
     z-index: 15;
 }
 .footer-header-brand {
+    display: flex;
     width: 100%;
     margin-right: auto;
     z-index: 15;
     filter: brightness(0) invert(1);
+}
+.footer-header-brand img {
+    height: 40px;
 }
 
 
@@ -88,4 +92,42 @@
     transition: all ease-in-out 0.2s;
     cursor: pointer;
     filter: sepia(98%) saturate(2187%) hue-rotate(121deg) brightness(88%) contrast(81%);
+}
+
+@media(max-width: 961px) {
+    .footer-content {
+        flex-flow: column nowrap;
+    }
+
+    .footer-header {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .footer-header-brand img {
+        height: 40px;        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .footer-body {
+        flex-flow: column nowrap;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .footer-body-sub {
+        margin: 0;
+    }
+
+    .footer-contacts {
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+    }
 }
