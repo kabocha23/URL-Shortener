@@ -96,14 +96,17 @@
     max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
+}
+.url-history:hover, .url-history:active, .url-history:focus {
+    overflow-y: auto;
 }
 .url-history-link {
     display: flex;
     flex-flow: row wrap;
     height: 75px;
-    width: 100%;
+    width: 99%;
     margin-bottom: 15px;
     background-color: white;
     border-radius: 10px;
@@ -198,6 +201,7 @@
     }
     .url-history {
         height: auto;
+        overflow-y: auto;
     }
     .url-history-link {
         flex-flow: column nowrap;
