@@ -23,8 +23,8 @@ const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, co
             </div>
             <div className='url-sub-2'>
                 <div className='url-history'>
-                    {data.length 
-                         ? data.map((data) => (
+                    {data.length ?
+                        data.map((data) => (
                             <div className='url-history-link' key={data.result.code}>
                                 <a 
                                     className='uhl-original' 
@@ -42,8 +42,8 @@ const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, co
                                     onClick={copyShortenedURL(data.result.code)}
                                 >Copy</button>
                             </div>
-                        ))
-                        : <div className='url-history-temp'>
+                        )) :
+                        <div className='url-history-temp'>
                             <p>Type the desired url above and the shortened version will appear here!</p>
                         </div>
                     }
