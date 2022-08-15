@@ -54,11 +54,14 @@
         margin-bottom: 5%;
         text-align: center;
     }
-
 }
 
 @media(max-width: 641px) {
     .intro-text {
         margin-bottom: 10%;
+    }
+    .intro-img img {
+        width: 600px;
+        margin-left: -25px;
     }
 }
