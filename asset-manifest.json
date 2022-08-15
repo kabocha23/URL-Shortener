@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/URL-Shortener/static/css/main.834c4b35.css",
+    "main.js": "/URL-Shortener/static/js/main.b75eab7e.js",
+    "static/js/787.91e9b957.chunk.js": "/URL-Shortener/static/js/787.91e9b957.chunk.js",
+    "static/media/illustration-working.svg": "/URL-Shortener/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
+    "static/media/logo.svg": "/URL-Shortener/static/media/logo.834643034343520f3b4d7e43111ed4d8.svg",
+    "static/media/icon-fully-customizable.svg": "/URL-Shortener/static/media/icon-fully-customizable.a1532a74fa781f6fde32.svg",
+    "static/media/icon-brand-recognition.svg": "/URL-Shortener/static/media/icon-brand-recognition.c349d3b69f7442e5ac35.svg",
+    "static/media/bg-boost-desktop.svg": "/URL-Shortener/static/media/bg-boost-desktop.772154c9b0e451733f5e.svg",
+    "static/media/icon-detailed-records.svg": "/URL-Shortener/static/media/icon-detailed-records.265c8aea77b546e08ba3.svg",
+    "static/media/icon-instagram.svg": "/URL-Shortener/static/media/icon-instagram.df5873287e1c06a0fe74440f6ccd8394.svg",
+    "index.html": "/URL-Shortener/index.html",
+    "static/media/icon-pinterest.svg": "/URL-Shortener/static/media/icon-pinterest.a2d25ab4c70b78c4028f25323009cc58.svg",
+    "static/media/bg-boost-mobile.svg": "/URL-Shortener/static/media/bg-boost-mobile.4b04bd89ea775da3deff.svg",
+    "static/media/bg-shorten-desktop.svg": "/URL-Shortener/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
+    "static/media/icon-twitter.svg": "/URL-Shortener/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
+    "static/media/icon-facebook.svg": "/URL-Shortener/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
+    "static/media/bg-shorten-mobile.svg": "/URL-Shortener/static/media/bg-shorten-mobile.41c34b33a14a3077e506.svg",
+    "main.834c4b35.css.map": "/URL-Shortener/static/css/main.834c4b35.css.map",
+    "main.b75eab7e.js.map": "/URL-Shortener/static/js/main.b75eab7e.js.map",
+    "787.91e9b957.chunk.js.map": "/URL-Shortener/static/js/787.91e9b957.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.834c4b35.css",
+    "static/js/main.b75eab7e.js"
+  ]
+}
