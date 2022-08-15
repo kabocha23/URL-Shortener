@@ -12,8 +12,6 @@ Please view the hosted site here!~ https://kabocha23.github.io/URL-Shortener/
 
 ![Desktop preview](https://github.com/kabocha23/URL-Shortener/blob/main/src/images/desktop-preview-1.png)
 
-![Desktop preview](https://github.com/kabocha23/URL-Shortener/blob/main/src/images/desktop-preview-2.png)
-
-![Desktop preview](https://github.com/kabocha23/URL-Shortener/blob/main/src/images/mobile-preview-1.png)
+![Desktop preview](https://github.com/kabocha23/URL-Shortener/blob/main/src/images/mobile-preview-1.jpeg)
 
 ![Desktop preview](https://github.com/kabocha23/URL-Shortener/blob/main/src/images/mobile-preview-2.png)
