@@ -115,10 +115,11 @@
         display: flex;
         flex-flow: column;
         align-items: center;
+        justify-content: space-evenly;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        height: 45vh;
+        height: 50vh;
         width: 80vw;
         color: white;
         background-color: hsl(257, 27%, 26%);
@@ -127,6 +128,12 @@
     .nav-menu-items-coll a {
         font-size: 18px;
         font-weight: 700;
+    }
+    .nav-menu-items-coll hr {
+        width: 80%;
+        height: 1px;
+        background-color: hsl(257, 7%, 63%);
+        border: none;
     }
     .nvic {
         display: flex;
@@ -140,17 +147,10 @@
     }
     .sign-up-btn {
         width: 80%;
-        height: 50px;
+        height: 55px;
+        margin-top: 10px;
+        margin-bottom: 25px;
     }
-
-
-    .nav-menu-items-coll hr {
-        width: 80%;
-        height: 1px;
-        background-color: hsl(257, 7%, 63%);
-        border: none;
-    }
-
     .sign-up-btn:hover {
         cursor: pointer;
         background-color: hsl(180, 70%, 60%);
@@ -159,18 +159,15 @@
     
     .toggle-button {
         display: flex;
-        position: absolute;
         align-items: center;
-        justify-content: center;
+        margin-left: auto;
+        margin-right: 0px;
         height: 100%; 
-        width: 75px;
-        right: 0;
         z-index: 10;
     }
     .toggle-button-btn {
         border: none;
         height: 40px;
-        width: 40px;
         background-color: transparent;
         cursor: pointer;
         font-weight: bold;
