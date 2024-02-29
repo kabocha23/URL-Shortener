@@ -2,8 +2,7 @@ import React from 'react';
 
 import './URL.css';
 
-const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, copied, data, error, loading }) => {
-
+const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, copied, data, error, loading, originalURL, setOriginalURL }) => {
     return (
         <div className='url-container'>
             <div className='url-sub-1'>
@@ -17,29 +16,29 @@ const URL = ( { urlSubmission, setUrlSubmission, submitURL, copyShortenedURL, co
                             onChange={e => setUrlSubmission(e.target.value)}
                             value={urlSubmission || ''}
                         ></input>
-                        <button type='submit'>Shorten It!</button>                    
+                        <button type='submit'>Shorten It!</button>
                     </form>
                 </div>
             </div>
             <div className='url-sub-2'>
                 <div className='url-history'>
                     {data.length ?
-                        data.map((data) => (
-                            <div className='url-history-link' key={data.result.code}>
+                        data.map((data, index) => (
+                            <div className='url-history-link' key={data.result_url}>
                                 <a 
                                     className='uhl-original' 
-                                    href={data.result.original_link}
-                                >{data.result.original_link}</a>
+                                    href={originalURL[index]}
+                                >{originalURL.url}</a>
                                 <hr></hr>
                                 <a 
-                                    id={data.result.code} 
+                                    id={data.result_url} 
                                     className='uhl-shortened' 
-                                    href={data.result.full_short_link2}
-                                >{data.result.full_short_link2}</a>
+                                    href={data.result_url}
+                                >{data.result_url}</a>
                                 <button 
-                                    id={'uhl-copy'+data.result.code} 
+                                    id={'uhl-copy'+data.result_url} 
                                     className='uhl-copy'
-                                    onClick={copyShortenedURL(data.result.code)}
+                                    onClick={copyShortenedURL(data.result_url)}
                                 >Copy</button>
                             </div>
                         )) :
